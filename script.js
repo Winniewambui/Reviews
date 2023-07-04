@@ -47,6 +47,7 @@ displayReviews();
 //buttons and their functions
 prevBtn.addEventListener("click", showPreviousReview);
 nextBtn.addEventListener("click", showNextReview);
+randomBtn.addEventListener("click", showRandomReview);
 
 //function for displaying the review...what it will display
 function displayReviews(){
@@ -73,5 +74,10 @@ function showNextReview() {
         currentReview = 0;
     }
     displayReviews();
-
 }
+
+// Function to show a random review
+function showRandomReview() {
+    currentReview = Math.floor(Math.random() * reviews.length);
+    displayReviews();
+  }
