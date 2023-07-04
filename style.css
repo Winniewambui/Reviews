@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(236, 248, 248);
+  }
+.review-container{
+    /* border: 2px solid blue; */
+    width: 700px;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(70, 68, 68);
+}
+.underline {
+    display: inline-block;
+    width: 90px; 
+    height: 3px;
+    background-color:  rgb(56, 179, 236);; 
+    margin-bottom: 15px;
+}
+.article{
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(220, 228, 231);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+#person-img{
+    width: 160px; 
+  height: 160px;
+  border-radius: 50%;
+}
+#author{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: rgb(70, 68, 68);
+}
+#job{
+    color: rgb(56, 179, 236);
+    text-transform: capitalize;
+}
+#info{
+    text-align: center;
+    padding: 0px 20px;
+    color: grey;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+.buttons button {
+    width: 30px; 
+    height: 30px; 
+    color: rgb(56, 179, 236);
+    border: none;
+}
+.random-btn {
+    width: 100px; 
+    height: 30px; 
+    border: none;
+}
